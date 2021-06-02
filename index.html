@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg div{
+            height:60px;
+            line-height:60px;
+            color:white;
+            font-size:30px;
+            text-align:center;
+        }
+        .bg div:nth-child(1){
+            background:red;
+        }
+        .bg div:nth-child(2){
+            background:blue;
+        }
+        .bg div:nth-child(3){
+            background:black;
+        }
+        .bg div:nth-child(4){
+            background:orange;
+        }
+        @media screen and (min-width:1200px){
+            .bg{
+                width:1200px;
+                height:60px;
+                position:relative;
+                margin:0 auto;
+            }
+            .bg div{
+                width:300px;
+                display:inline-block;
+            }
+            .bg div:nth-child(2){
+                position:absolute;
+                top:0;
+                left:300px;
+            }
+            .bg div:nth-child(3){
+                position:absolute;
+                top:0;
+                left:600px;
+            }
+            .bg div:nth-child(4){
+                position:absolute;
+                top:0;
+                left:900px;
+            }
+        }
+        @media screen and (min-width:992px) and (max-width:1200px){
+            .bg{
+                width:999px;
+                height:120px;
+                position:relative;
+                margin:0 auto;
+            }
+            .bg div:nth-child(2){
+                width:333px;
+                display:inline-block;
+            }
+            .bg div:nth-child(3){
+                width:333px;
+                display:inline-block;
+                position:absolute;
+                left:333px;
+            }
+            .bg div:nth-child(4){
+                width:333px;
+                display:inline-block;
+                position:absolute;
+                left:666px;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:992px){
+            .bg{
+                width:800px;
+                height:120px;
+                margin:0 auto;
+                position:relative;
+            }
+            .bg div:nth-child(1){
+                width:400px;
+                display:inline-block;
+            }
+            .bg div:nth-child(2){
+                width:400px;
+                display:inline-block;
+                position:absolute;
+                top:0;
+                left:400px;
+            }
+            .bg div:nth-child(3){
+                width:400px;
+                display:inline-block;
+                position:absolute;
+                top:60px;
+                left:0;
+            }
+            .bg div:nth-child(4){
+                width:400px;
+                display:inline-block;
+                position:absolute;
+                top:60px;
+                left:400px;
+            }
+        }
+        @media screen and (max-width:768px){
+            .bg{
+                width:500px;
+                height:240px;
+                margin:0 auto;
+            }
+            .bg div{
+                width:500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>
